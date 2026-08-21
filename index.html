@@ -4,19 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yara Nascimento da Silva — Portfólio </title>
+  <title>Yara Nascimento da Silva — Portfólio</title>
   <meta name="description"
     content="Portfólio Editorial de Yara Nascimento da Silva — Desenvolvimento de Software Multiplataforma, Web, Automações e Bancos de Dados em São Paulo, BR.">
 
-  <!-- Google Fonts -->
+  <!-- Carregamento Preciso da Migra CDN + JetBrains Mono -->
+  <link href="https://fonts.cdnfonts.com/css/migra" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/print-js/1.6.0/print.js"></script>
   <style>
+    /* DEFINIÇÃO RIGOROSA DA MIGRA EXTRALIGHT (PESO LEVE / HASTES FINAS) */
+    @font-face {
+      font-family: 'Migra';
+      src: url('https://fonts.cdnfonts.com/s/75428/Migra-Extralight.woff') format('woff');
+      font-weight: 200;
+      font-style: normal;
+      font-display: swap;
+    }
+
     :root {
       --papel: #F2F2F2;
       --papel-superficie: #FFFFFF;
@@ -30,10 +38,13 @@
       --linha-grade: rgba(146, 26, 61, 0.12);
       --linha-grade-forte: rgba(146, 26, 61, 0.25);
       --cor-borda: rgba(146, 26, 61, 0.18);
-      --raio: 4px;
+      --raio: 6px;
       --maximo: 1040px;
-      --fonte-titulos: 'Bodoni Moda', Georgia, serif;
+      
+      /* TIPOGRAFIA COM EXTRALIGHT EXPLICITO (200) */
+      --fonte-titulos: 'Migra', serif;
       --fonte-mono: 'JetBrains Mono', monospace;
+
       --fundo-notificacao: #400101;
       --texto-notificacao: #F2F2F2;
       --sombra-a4: 0 18px 45px rgba(64, 1, 1, 0.12), 0 4px 12px rgba(64, 1, 1, 0.06);
@@ -71,7 +82,7 @@
     body {
       background-color: var(--papel);
       color: var(--tinta);
-      font-family: var(--fonte-titulos);
+      font-family: var(--fonte-mono);
       font-weight: 400;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -81,6 +92,7 @@
       background-size: 32px 32px;
       background-position: -1px -1px;
       transition: background-color 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
     }
 
     #canvasGrid {
@@ -148,17 +160,17 @@
 
     .marca {
       font-family: var(--fonte-titulos);
-      font-style: italic;
-      font-weight: 600;
-      font-size: 22px;
-      letter-spacing: -0.01em;
+      font-weight: 200;
+      font-style: normal;
+      font-size: 26px;
+      letter-spacing: -0.02em;
       color: var(--azul);
       background: none;
       border: none;
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 2px;
     }
 
     .marca span {
@@ -183,8 +195,9 @@
 
     .botao-nav {
       font-family: var(--fonte-mono);
-      font-size: 12px;
-      letter-spacing: 0.08em;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
       color: var(--tinta-suave);
       background: none;
@@ -219,7 +232,7 @@
 
     .botao-nav.ativo {
       color: var(--azul);
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .botao-tema {
@@ -232,9 +245,9 @@
       border-radius: 999px;
       color: var(--tinta);
       font-family: var(--fonte-mono);
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 500;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
       cursor: pointer;
       transition: background 0.25s ease, border-color 0.25s ease;
@@ -292,27 +305,48 @@
       position: relative;
     }
 
+    /* COMPOSIÇÃO EDITORIAL DA HOME COM MIGRA EXTRALIGHT (PESO 200, FINO E DE ALTO CONTRASTE) */
     .inicio h1 {
       font-family: var(--fonte-titulos);
-      font-style: italic;
-      font-size: clamp(40px, 7vw, 84px);
-      font-weight: 500;
-      letter-spacing: -0.02em;
-      line-height: 1.08;
-      margin-bottom: 24px;
-      max-width: 900px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: 1.05;
+      margin-bottom: 28px;
+      max-width: 920px;
     }
 
-    .inicio h1 em {
-      font-style: italic;
+    .inicio h1 .linha-prefixo {
+      display: block;
+      font-size: clamp(20px, 3vw, 28px);
+      color: var(--tinta-suave);
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+      font-weight: 200;
+    }
+
+    .inicio h1 .linha-nome {
+      display: block;
+      font-size: clamp(48px, 7.5vw, 92px);
+      letter-spacing: -0.02em;
+      color: var(--tinta);
+      font-weight: 200;
+      line-height: 0.98;
+    }
+
+    .inicio h1 .linha-sobrenome {
+      display: block;
+      font-size: clamp(48px, 7.5vw, 92px);
+      letter-spacing: -0.02em;
       color: var(--azul);
-      display: inline-block;
+      font-weight: 200;
+      line-height: 0.98;
     }
 
     .cargo-inicio {
       margin: 0 auto;
       max-width: 650px;
-      font-size: clamp(16px, 2.1vw, 20px);
+      font-family: var(--fonte-mono);
+      font-size: clamp(14px, 1.8vw, 16px);
       color: var(--tinta-suave);
       font-weight: 400;
       line-height: 1.6;
@@ -328,8 +362,9 @@
 
     .botao-pula {
       font-family: var(--fonte-mono);
-      font-size: 12px;
-      letter-spacing: 0.08em;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #ffffff;
       background: #921A3D;
@@ -338,6 +373,7 @@
       padding: 13px 28px;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
       cursor: pointer;
       transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
@@ -408,20 +444,145 @@
 
     .cabecalho-secao h2 {
       font-family: var(--fonte-titulos);
-      font-style: italic;
-      font-size: clamp(32px, 4vw, 48px);
-      font-weight: 500;
-      letter-spacing: -0.01em;
+      font-style: normal;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 200;
+      letter-spacing: -0.02em;
     }
 
     .sub-secao {
       font-family: var(--fonte-mono);
       font-size: 12px;
+      font-weight: 700;
       color: var(--azul);
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
+    /* CARDS DOS PROJETOS */
+    .contenedor-pranchas {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .prancha {
+      background: var(--papel-superficie);
+      border: 1px solid var(--cor-borda);
+      border-radius: var(--raio);
+      padding: 36px;
+      position: relative;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .prancha:hover {
+      border-color: var(--azul);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .prancha.inverter-lado {
+      grid-template-columns: 1fr 1fr;
+    }
+    .prancha.inverter-lado .visual-prancha {
+      order: 2;
+    }
+    .prancha.inverter-lado .conteudo-prancha {
+      order: 1;
+    }
+
+    .conteudo-prancha {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+    }
+
+    .numero-prancha {
+      font-family: var(--fonte-titulos);
+      font-style: normal;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 200;
+      color: var(--azul);
+      line-height: 1;
+      margin-bottom: 8px;
+      opacity: 0.9;
+      display: inline-block;
+    }
+
+    .titulo-prancha {
+      font-family: var(--fonte-titulos);
+      font-style: normal;
+      font-size: clamp(24px, 2.8vw, 34px);
+      font-weight: 200;
+      color: var(--tinta);
+      margin-bottom: 12px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    .descricao-prancha {
+      font-family: var(--fonte-mono);
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--tinta-suave);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .etiquetas-prancha {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .etiqueta-blueprint {
+      font-family: var(--fonte-mono);
+      font-size: 11.5px;
+      font-weight: 500;
+      padding: 5px 12px;
+      border: 1px solid var(--cor-borda);
+      color: var(--azul);
+      background: var(--azul-suave);
+      border-radius: var(--raio);
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .acoes-prancha {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-top: auto;
+      flex-wrap: wrap;
+    }
+
+    .visual-prancha {
+      background: var(--papel-cartao);
+      border: 1px solid var(--cor-borda);
+      border-radius: var(--raio);
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .midia-prancha {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* CURRÍCULO E CONTATO */
     .envoltorio-a4 {
       display: flex;
       flex-direction: column;
@@ -453,12 +614,11 @@
 
     .nome-a4 {
       font-family: var(--fonte-titulos);
-      font-size: 32px;
-      font-style: italic;
-      font-weight: 600;
+      font-style: normal;
+      font-size: 38px;
+      font-weight: 200;
       letter-spacing: -0.01em;
       color: var(--tinta);
-      text-transform: uppercase;
       margin-bottom: 8px;
     }
 
@@ -471,7 +631,8 @@
 
     .links-a4 {
       font-family: var(--fonte-mono);
-      font-size: 12px;
+      font-size: 12.5px;
+      font-weight: 500;
       color: var(--azul);
       display: flex;
       justify-content: center;
@@ -490,7 +651,7 @@
       font-family: var(--fonte-mono);
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--azul);
       display: flex;
@@ -507,8 +668,8 @@
     }
 
     .corpo-a4 {
-      font-family: var(--fonte-titulos);
-      font-size: 15px;
+      font-family: var(--fonte-mono);
+      font-size: 13.5px;
       color: var(--tinta-suave);
       line-height: 1.6;
     }
@@ -528,7 +689,7 @@
 
     .rotulo-habilidade-a4 {
       font-family: var(--fonte-mono);
-      font-size: 11px;
+      font-size: 11.5px;
       font-weight: 700;
       text-transform: uppercase;
       color: var(--tinta);
@@ -557,147 +718,35 @@
     }
 
     .titulo-entrada-a4 {
-      font-size: 16px;
-      font-weight: 600;
+      font-family: var(--fonte-titulos);
+      font-style: normal;
+      font-size: 22px;
+      font-weight: 200;
       color: var(--tinta);
     }
 
     .sub-entrada-a4 {
       font-family: var(--fonte-mono);
       font-size: 12px;
+      font-weight: 500;
       color: var(--azul);
     }
 
     .etiquetas-entrada-a4 {
       font-family: var(--fonte-mono);
-      font-size: 11px;
+      font-size: 12px;
       color: var(--suave);
       margin-bottom: 6px;
     }
 
     .descricao-entrada-a4 {
-      font-size: 14px;
+      font-family: var(--fonte-mono);
+      font-size: 13px;
       color: var(--tinta-suave);
     }
 
     .descricao-entrada-a4 p {
       margin-bottom: 4px;
-    }
-
-    .contenedor-pranchas {
-      display: flex;
-      flex-direction: column;
-      gap: 64px;
-    }
-
-    .prancha {
-      background: var(--papel-superficie);
-      border: 1px solid var(--cor-borda);
-      border-radius: var(--raio);
-      padding: 40px;
-      position: relative;
-      transition: border-color 0.25s ease;
-    }
-
-    .prancha:hover {
-      border-color: var(--azul);
-    }
-
-    .prancha-v1 {
-      display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .prancha-v2 {
-      display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .prancha-v3 {
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-    }
-
-    .numero-prancha {
-      font-family: var(--fonte-titulos);
-      font-style: italic;
-      font-size: clamp(36px, 5vw, 64px);
-      color: var(--azul);
-      line-height: 1;
-      margin-bottom: 8px;
-      opacity: 0.9;
-      display: inline-block;
-    }
-
-    .titulo-prancha {
-      font-family: var(--fonte-titulos);
-      font-style: italic;
-      font-size: clamp(24px, 3vw, 32px);
-      font-weight: 500;
-      color: var(--tinta);
-      margin-bottom: 12px;
-    }
-
-    .descricao-prancha {
-      font-size: 15.5px;
-      color: var(--tinta-suave);
-      line-height: 1.65;
-      margin-bottom: 20px;
-    }
-
-    .etiquetas-prancha {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
-
-    .etiqueta-blueprint {
-      font-family: var(--fonte-mono);
-      font-size: 11px;
-      padding: 4px 10px;
-      border: 1px solid var(--cor-borda);
-      color: var(--azul);
-      background: var(--azul-suave);
-      border-radius: var(--raio);
-      display: inline-block;
-    }
-
-    .acoes-prancha {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-    }
-
-    .visual-prancha {
-      background: var(--papel-cartao);
-      border: 1px solid var(--cor-borda);
-      border-radius: var(--raio);
-      padding: 24px;
-      min-height: 240px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .visual-prancha svg {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .midia-prancha {
-      width: 100%;
-      aspect-ratio: 16 / 10;
-      object-fit: cover;
-      display: block;
     }
 
     .caixa-contato {
@@ -712,20 +761,22 @@
 
     .titulo-contato {
       font-family: var(--fonte-titulos);
-      font-style: italic;
-      font-size: clamp(36px, 5vw, 56px);
-      font-weight: 500;
-      line-height: 1.1;
+      font-style: normal;
+      font-size: clamp(38px, 5.5vw, 60px);
+      font-weight: 200;
+      line-height: 1.05;
       margin-bottom: 16px;
+      letter-spacing: -0.02em;
     }
 
-    .titulo-contato em {
+    .titulo-contato span {
       color: var(--azul);
-      font-style: italic;
+      font-weight: 200;
     }
 
     .texto-introducao-contato {
-      font-size: 16px;
+      font-family: var(--fonte-mono);
+      font-size: 14px;
       color: var(--tinta-suave);
       max-width: 440px;
     }
@@ -747,17 +798,19 @@
 
     .valor-linha-contato {
       font-family: var(--fonte-mono);
-      font-size: 14px;
+      font-size: 13.5px;
+      font-weight: 500;
       color: var(--tinta);
     }
 
     .botao-copiar-contato {
       font-family: var(--fonte-mono);
-      font-size: 11px;
+      font-size: 11.5px;
+      font-weight: 500;
       color: var(--azul);
       background: var(--azul-suave);
       border: 1px solid var(--cor-borda);
-      padding: 4px 10px;
+      padding: 5px 12px;
       border-radius: var(--raio);
       cursor: pointer;
       transition: all 0.2s ease;
@@ -774,7 +827,7 @@
       justify-content: space-between;
       align-items: center;
       font-family: var(--fonte-mono);
-      font-size: 11.5px;
+      font-size: 12px;
       color: var(--suave);
       flex-wrap: wrap;
       gap: 12px;
@@ -789,7 +842,8 @@
       background: var(--fundo-notificacao);
       color: var(--texto-notificacao);
       font-family: var(--fonte-mono);
-      font-size: 12px;
+      font-size: 12.5px;
+      font-weight: 500;
       padding: 12px 20px;
       border-radius: 4px;
       z-index: 200;
@@ -804,16 +858,25 @@
       opacity: 1;
     }
 
+    /* RESPONSIVIDADE */
     @media (max-width: 860px) {
+      .prancha, .prancha.inverter-lado {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px;
+      }
+
+      .prancha.inverter-lado .visual-prancha {
+        order: 1;
+      }
+
+      .prancha.inverter-lado .conteudo-prancha {
+        order: 2;
+      }
+
       .folha-a4 {
         padding: 36px 24px;
         min-height: auto;
-      }
-
-      .prancha-v1,
-      .prancha-v2 {
-        grid-template-columns: 1fr;
-        gap: 28px;
       }
 
       .caixa-contato {
@@ -841,7 +904,31 @@
       }
 
       .inicio {
-        padding: 50px 0 30px;
+        padding: 40px 0 30px;
+      }
+
+      .prancha {
+        padding: 20px;
+        gap: 20px;
+      }
+
+      .titulo-prancha {
+        font-size: 24px;
+      }
+
+      .descricao-prancha {
+        font-size: 13px;
+        line-height: 1.55;
+      }
+
+      .acoes-prancha {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .acoes-prancha .botao-pula {
+        width: 100%;
+        text-align: center;
       }
 
       .cabecalho-a4 {
@@ -857,16 +944,13 @@
       }
     }
 
-    /* ==========================================
-       CONFIGURAÇÃO EXCLUSIVA DE IMPRESSÃO / PDF
-       ========================================== */
+    /* IMPRESSÃO / PDF */
     @media print {
       @page {
         size: A4 portrait;
         margin: 12mm 15mm 10mm 15mm;
       }
 
-      /* Força todas as cores do texto para Preto Absoluto (#000000) */
       *,
       *::before,
       *::after {
@@ -888,7 +972,6 @@
         overflow: visible !important;
       }
 
-      /* Oculta apenas os elementos do site fora do currículo */
       header.cabecalho-principal,
       .acoes-inicio,
       .notificacao,
@@ -922,7 +1005,6 @@
         box-sizing: border-box !important;
       }
 
-      /* Cabeçalho do Currículo em Destaque */
       .cabecalho-a4 {
         display: block !important;
         margin-bottom: 16px !important;
@@ -932,12 +1014,10 @@
       }
 
       .nome-a4 {
-        font-size: 26pt !important;
-        font-weight: 800 !important;
+        font-size: 24pt !important;
+        font-weight: 200 !important;
         color: #000000 !important;
         margin-bottom: 6px !important;
-        letter-spacing: 0.04em !important;
-        text-transform: uppercase !important;
         display: block !important;
       }
 
@@ -953,7 +1033,6 @@
         text-decoration: underline !important;
       }
 
-      /* Seções e Bloco de Conteúdo */
       .secao-a4 {
         margin-bottom: 14px !important;
         page-break-inside: avoid !important;
@@ -962,7 +1041,7 @@
       .titulo-a4 {
         margin-bottom: 6px !important;
         padding-bottom: 2px !important;
-        font-size: 10.5pt !important;
+        font-size: 10pt !important;
         font-weight: 700 !important;
         color: #000000 !important;
         border-bottom: 1px solid #000000 !important;
@@ -985,7 +1064,7 @@
 
       .titulo-entrada-a4 {
         font-size: 11pt !important;
-        font-weight: 700 !important;
+        font-weight: 200 !important;
         color: #000000 !important;
       }
 
@@ -1053,7 +1132,11 @@
 
     <section id="inicio" class="inicio secao-pagina ativa">
       <div class="contenedor">
-        <h1>Olá, Eu sou <br><em> Yara Nascimento da Silva.</em></h1>
+        <h1>
+          <span class="linha-prefixo">Olá, Eu sou</span>
+          <span class="linha-nome">Yara Nascimento da</span>
+          <span class="linha-sobrenome">Silva.</span>
+        </h1>
 
         <p class="cargo-inicio">
           Estudante de Desenvolvimento de Software Multiplataforma na FATEC Itaquera,
@@ -1095,12 +1178,12 @@
 
         <div class="contenedor-pranchas">
 
-          <!-- Prancha 01: Memorial Carandiru -->
-          <article class="prancha prancha-v1">
-            <div class="visual-prancha" style="padding: 0; overflow: hidden; border: 1px solid var(--cor-borda);">
+          <!-- Prancha 01 -->
+          <article class="prancha">
+            <div class="visual-prancha">
               <img src="imagem-carandiru.png" alt="Preview do site Espaço Memória Carandiru" class="midia-prancha">
             </div>
-            <div>
+            <div class="conteudo-prancha">
               <div class="numero-prancha">01</div>
               <h3 class="titulo-prancha">Projeto Memorial Carandiru</h3>
               <p class="descricao-prancha">
@@ -1122,9 +1205,12 @@
             </div>
           </article>
 
-          <!-- Prancha 02: Apoio Oncológico -->
-          <article class="prancha prancha-v2">
-            <div>
+          <!-- Prancha 02 -->
+          <article class="prancha inverter-lado">
+            <div class="visual-prancha">
+              <img src="apoioOnco.png" alt="Preview da plataforma Apoio Oncológico" class="midia-prancha">
+            </div>
+            <div class="conteudo-prancha">
               <div class="numero-prancha">02</div>
               <h3 class="titulo-prancha">Plataforma De Mapeamento de ONGs — Apoio Oncológico</h3>
               <p class="descricao-prancha">
@@ -1143,20 +1229,18 @@
                   rel="noopener">Acessar Repositório ↗</a>
               </div>
             </div>
-            <div class="visual-prancha" style="padding: 0; overflow: hidden; border: 1px solid var(--cor-borda);">
-              <img src="apoioOnco.png" alt="Preview da plataforma Apoio Oncológico" class="midia-prancha">
-            </div>
           </article>
 
-          <!-- Prancha 03: Agendamento Salão -->
-          <article class="prancha prancha-v3">
-
-            <div>
-              <div class="numero-prancha">03</div>
+          <!-- Prancha 03 -->
+          <article class="prancha">
+            <div class="visual-prancha">
               <video src="video-marcella.mp4" poster="imagem-marcella.jpg" autoplay loop muted playsinline
                 class="midia-prancha">
                 Seu navegador não suporta a reprodução de vídeo.
               </video>
+            </div>
+            <div class="conteudo-prancha">
+              <div class="numero-prancha">03</div>
               <h3 class="titulo-prancha">Sistema de Agendamento — Salão de Beleza</h3>
               <p class="descricao-prancha">
                 Desenvolvimento de aplicação Full Stack para gerenciamento de clientes e horários.
@@ -1193,7 +1277,6 @@
               Baixar PDF / Imprimir
             </a>
           </div>
-
 
           <div class="folha-a4">
 
@@ -1297,7 +1380,7 @@
       <div class="contenedor">
         <div class="caixa-contato">
           <div>
-            <h2 class="titulo-contato">Vamos construir algo <em>incrível.</em></h2>
+            <h2 class="titulo-contato">Vamos construir algo <span>incrível.</span></h2>
             <p class="texto-introducao-contato">
               Estou aberta a oportunidades de estágio, projetos freelances ou colaborações em desenvolvimento de
               software e automações.
