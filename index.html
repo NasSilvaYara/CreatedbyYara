@@ -305,7 +305,7 @@
       position: relative;
     }
 
-    /* COMPOSIÇÃO EDITORIAL DA HOME COM MIGRA EXTRALIGHT (PESO 200, FINO E DE ALTO CONTRASTE) */
+    /* COMPOSIÇÃO EDITORIAL DA HOME COM MIGRA EXTRALIGHT (PESO 200) */
     .inicio h1 {
       font-family: var(--fonte-titulos);
       font-style: normal;
@@ -580,6 +580,41 @@
       height: 100%;
       object-fit: cover;
       display: block;
+    }
+
+    /* PREVIEW INTERATIVO DO PROJETO PORTFÓLIO NA PRANCHA 04 */
+    .preview-portfolio-card {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      background: var(--papel);
+    }
+
+    .preview-portfolio-card .titulo-mini {
+      font-family: var(--fonte-titulos);
+      font-style: normal;
+      font-weight: 200;
+      font-size: 24px;
+      color: var(--tinta);
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    .preview-portfolio-card .titulo-mini span {
+      color: var(--azul);
+    }
+
+    .preview-portfolio-card .tag-mini {
+      font-family: var(--fonte-mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--tinta-suave);
     }
 
     /* CURRÍCULO E CONTATO */
@@ -1255,6 +1290,34 @@
               </div>
               <div class="acoes-prancha">
                 <a class="botao-pula" href="https://github.com/NasSilvaYara/marcella_MasterDesign" target="_blank"
+                  rel="noopener">Acessar Repositório ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Prancha 04 — O Próprio Portfólio -->
+          <article class="prancha inverter-lado">
+            <div class="visual-prancha">
+              <!-- MUDAR PARFA O VIDEO <div class="preview-portfolio-card">
+                <div class="titulo-mini">Yara <span>Nascimento</span></div>
+                <div class="tag-mini">Portfólio Editorial &amp; Interativo</div>
+              </div>-->
+            </div>
+            <div class="conteudo-prancha">
+              <div class="numero-prancha">04</div>
+              <h3 class="titulo-prancha">Portfólio Editorial &amp; Canvas Interativo</h3>
+              <p class="descricao-prancha">
+                Plataforma autoral com identidade visual editorial, tipografia Migra Extralight refinada e grid dinâmico simulado em HTML5 Canvas com Física de Molas. Inclui currículo gerável em PDF e alternância de tema.
+              </p>
+              <div class="etiquetas-prancha">
+                <span class="etiqueta-blueprint">HTML5 Canvas</span>
+                <span class="etiqueta-blueprint">JavaScript (ES6+)</span>
+                <span class="etiqueta-blueprint">CSS Grid/Flexbox</span>
+                <span class="etiqueta-blueprint">Design Editorial</span>
+                <span class="etiqueta-blueprint">Print.js</span>
+              </div>
+              <div class="acoes-prancha">
+                <a class="botao-pula" href="https://github.com/NasSilvaYara/CreatedbyYara" target="_blank"
                   rel="noopener">Acessar Repositório ↗</a>
               </div>
             </div>
