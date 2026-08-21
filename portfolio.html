@@ -1,1106 +1,1608 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="claro">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yara Nascimento da Silva — Portfólio </title>
-<meta name="description" content="Portfólio Editorial de Yara Nascimento da Silva — Desenvolvimento de Software Multiplataforma, Web, Automações e Bancos de Dados em São Paulo, BR.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yara Nascimento da Silva — Portfólio </title>
+  <meta name="description"
+    content="Portfólio Editorial de Yara Nascimento da Silva — Desenvolvimento de Software Multiplataforma, Web, Automações e Bancos de Dados em São Paulo, BR.">
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
 
-<style>
-  :root {
-    --papel: #e8e8ee;
-    --papel-superficie: #f2f2f7;
-    --papel-cartao: #ffffff;
-    --tinta: #17161f;
-    --tinta-suave: #3d3b4a;
-    --suave: #6e6d7a;
-    --azul: #3a28ff;
-    --azul-profundo: #2212d4;
-    --azul-suave: #e8e6ff;
-    --linha-grade: rgba(58, 40, 255, 0.10);
-    --linha-grade-forte: rgba(58, 40, 255, 0.22);
-    --cor-borda: #c7c4e6;
-    --raio: 4px;
-    --maximo: 1040px;
-    --fonte-titulos: 'Fraunces', Georgia, serif;
-    --fonte-mono: 'JetBrains Mono', monospace;
-    --fundo-notificacao: #17161f;
-    --texto-notificacao: #ffffff;
-    --sombra-a4: 0 18px 45px rgba(23, 22, 31, 0.12), 0 4px 12px rgba(23, 22, 31, 0.06);
-  }
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/print-js/1.6.0/print.js"></script>
+  <style>
+    :root {
+      --papel: #F2F2F2;
+      --papel-superficie: #FFFFFF;
+      --papel-cartao: #FAFAFA;
+      --tinta: #400101;
+      --tinta-suave: #6F1D33;
+      --suave: #60001B;
+      --azul: #921A3D;
+      --azul-profundo: #60001B;
+      --azul-suave: rgba(146, 26, 61, 0.08);
+      --linha-grade: rgba(146, 26, 61, 0.12);
+      --linha-grade-forte: rgba(146, 26, 61, 0.25);
+      --cor-borda: rgba(146, 26, 61, 0.18);
+      --raio: 4px;
+      --maximo: 1040px;
+      --fonte-titulos: 'Bodoni Moda', Georgia, serif;
+      --fonte-mono: 'JetBrains Mono', monospace;
+      --fundo-notificacao: #400101;
+      --texto-notificacao: #F2F2F2;
+      --sombra-a4: 0 18px 45px rgba(64, 1, 1, 0.12), 0 4px 12px rgba(64, 1, 1, 0.06);
+    }
 
-  [data-theme="escuro"] {
-    --papel: #0e1017;
-    --papel-superficie: #151824;
-    --papel-cartao: #1c2030;
-    --tinta: #e8eaee;
-    --tinta-suave: #b0b6cf;
-    --suave: #727a9c;
-    --azul: #635bff;
-    --azul-profundo: #847dff;
-    --azul-suave: #1c1c3d;
-    --linha-grade: rgba(99, 91, 255, 0.14);
-    --linha-grade-forte: rgba(99, 91, 255, 0.28);
-    --cor-borda: #2b324d;
-    --fundo-notificacao: #ffffff;
-    --texto-notificacao: #0e1017;
-    --sombra-a4: 0 20px 50px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(0, 0, 0, 0.3);
-  }
+    [data-theme="escuro"] {
+      --papel: #232220;
+      --papel-superficie: #2B2925;
+      --papel-cartao: #302E29;
+      --preto-pontual: #151412;
+      --tinta: #EDE8E0;
+      --tinta-suave: #C6C0B5;
+      --suave: #948E82;
+      --azul: #C2536C;
+      --azul-profundo: #8C3350;
+      --azul-suave: rgba(194, 83, 108, 0.16);
+      --linha-grade: rgba(237, 232, 224, 0.05);
+      --linha-grade-forte: rgba(237, 232, 224, 0.13);
+      --cor-borda: rgba(237, 232, 224, 0.10);
+      --fundo-notificacao: #EDE8E0;
+      --texto-notificacao: #232220;
+      --sombra-a4: 0 20px 46px rgba(0, 0, 0, 0.42), 0 4px 16px rgba(0, 0, 0, 0.22);
+    }
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  body {
-    background-color: var(--papel);
-    color: var(--tinta);
-    font-family: var(--fonte-titulos);
-    font-weight: 400;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    background-image:
-      linear-gradient(var(--linha-grade) 1px, transparent 1px),
-      linear-gradient(90deg, var(--linha-grade) 1px, transparent 1px);
-    background-size: 32px 32px;
-    background-position: -1px -1px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+    body {
+      background-color: var(--papel);
+      color: var(--tinta);
+      font-family: var(--fonte-titulos);
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      background-image:
+        linear-gradient(var(--linha-grade) 1px, transparent 1px),
+        linear-gradient(90deg, var(--linha-grade) 1px, transparent 1px);
+      background-size: 32px 32px;
+      background-position: -1px -1px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-  a { color: inherit; text-decoration: none; }
+    #canvasGrid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
 
-  ::selection { background: var(--azul); color: #fff; }
+    header.cabecalho-principal,
+    main {
+      position: relative;
+      z-index: 1;
+    }
 
-  :focus-visible {
-    outline: 2px solid var(--azul);
-    outline-offset: 3px;
-  }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-  .contenedor {
-    max-width: var(--maximo);
-    margin: 0 auto;
-    padding: 0 24px;
-  }
+    ::selection {
+      background: #921A3D;
+      color: #F2F2F2;
+    }
 
-  .mono { font-family: var(--fonte-mono); }
+    :focus-visible {
+      outline: 2px solid #921A3D;
+      outline-offset: 3px;
+    }
 
-  header {
-    position: sticky;
-    top: 0;
-    z-index: 50;
-    background: rgba(232, 232, 238, 0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--linha-grade-forte);
-    transition: background-color 0.3s ease;
-  }
-  [data-theme="escuro"] header {
-    background: rgba(14, 16, 23, 0.92);
-  }
+    .contenedor {
+      max-width: var(--maximo);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
 
-  .nav-interna {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 68px;
-    gap: 16px;
-  }
+    .mono {
+      font-family: var(--fonte-mono);
+    }
 
-  .marca {
-    font-family: var(--fonte-titulos);
-    font-style: italic;
-    font-weight: 600;
-    font-size: 22px;
-    letter-spacing: -0.01em;
-    color: var(--azul);
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-  .marca span { color: var(--tinta); }
+    header.cabecalho-principal {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(242, 242, 242, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--linha-grade-forte);
+      transition: background-color 0.3s ease;
+    }
 
-  nav { display: flex; align-items: center; gap: 20px; }
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 26px;
-  }
+    [data-theme="escuro"] header.cabecalho-principal {
+      background: rgba(21, 20, 18, 0.82);
+    }
 
-  .botao-nav {
-    font-family: var(--fonte-mono);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--tinta-suave);
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    padding: 6px 0;
-    transition: color 0.2s ease;
-  }
-  .botao-nav::after {
-    content: "";
-    position: absolute;
-    left: 0; bottom: 0;
-    width: 0; height: 2px;
-    background: var(--azul);
-    transition: width .25s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .botao-nav:hover, .botao-nav:focus-visible { color: var(--azul); }
-  .botao-nav:hover::after, .botao-nav:focus-visible::after, .botao-nav.ativo::after { width: 100%; }
-  .botao-nav.ativo { color: var(--azul); font-weight: 600; }
+    .nav-interna {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      gap: 16px;
+    }
 
-  .botao-tema {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 14px 6px 10px;
-    background: var(--papel-superficie);
-    border: 1px solid var(--cor-borda);
-    border-radius: 999px;
-    color: var(--tinta);
-    font-family: var(--fonte-mono);
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.25s ease;
-  }
-  .botao-tema:hover {
-    border-color: var(--azul);
-    transform: translateY(-1px);
-  }
-  .icone-tema {
-    width: 20px; height: 20px;
-    border-radius: 50%;
-    background: var(--azul-suave);
-    color: var(--azul);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 11px;
-  }
+    .marca {
+      font-family: var(--fonte-titulos);
+      font-style: italic;
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: -0.01em;
+      color: var(--azul);
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
 
-  .secao-pagina { display: none !important; }
-  .secao-pagina.ativa { display: block !important; animation: esvanecerSecao .3s cubic-bezier(0.16, 1, 0.3, 1); }
-  .inicio.secao-pagina.ativa { display: flex !important; }
+    .marca span {
+      color: var(--tinta);
+    }
 
-  @keyframes esvanecerSecao {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+    [data-theme="escuro"] .marca {
+      color: var(--azul);
+    }
 
-  .inicio {
-    min-height: calc(100vh - 68px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 80px 0 60px;
-    position: relative;
-  }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
 
-  .inicio h1 {
-    font-family: var(--fonte-titulos);
-    font-style: italic;
-    font-size: clamp(40px, 7vw, 84px);
-    font-weight: 500;
-    letter-spacing: -0.02em;
-    line-height: 1.08;
-    margin-bottom: 24px;
-    max-width: 900px;
-  }
-  .inicio h1 em {
-    font-style: italic;
-    color: var(--azul);
-  }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 26px;
+    }
 
-  .cargo-inicio {
-    margin: 0 auto;
-    max-width: 650px;
-    font-size: clamp(16px, 2.1vw, 20px);
-    color: var(--tinta-suave);
-    font-weight: 400;
-    line-height: 1.6;
-  }
+    .botao-nav {
+      font-family: var(--fonte-mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--tinta-suave);
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      padding: 6px 0;
+      transition: color 0.2s ease;
+    }
 
-  .acoes-inicio {
-    margin-top: 40px;
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+    .botao-nav::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: var(--azul);
+      transition: width .25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-  .botao-pula {
-    font-family: var(--fonte-mono);
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #ffffff;
-    background: var(--azul);
-    border: 1px solid var(--azul);
-    border-radius: 999px;
-    padding: 13px 28px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    transition: all .2s ease;
-    box-shadow: 0 4px 14px rgba(58, 40, 255, 0.25);
-  }
-  .botao-pula:hover {
-    background: var(--azul-profundo);
-    border-color: var(--azul-profundo);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(58, 40, 255, 0.35);
-  }
-  .botao-pula.secundario {
-    background: transparent;
-    color: var(--tinta);
-    border-color: var(--cor-borda);
-    box-shadow: none;
-  }
-  .botao-pula.secundario:hover {
-    border-color: var(--azul);
-    color: var(--azul);
-    background: var(--papel-superficie);
-  }
+    .botao-nav:hover,
+    .botao-nav:focus-visible {
+      color: var(--azul);
+    }
 
-  .meta-rodape-inicio {
-    margin-top: 56px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px 32px;
-    font-family: var(--fonte-mono);
-    font-size: 13px;
-    color: var(--suave);
-  }
-  .item-meta-inicio { display: inline-flex; align-items: center; gap: 8px; }
-  .meta-rodape-inicio a {
-    color: var(--tinta);
-    border-bottom: 1px dashed var(--cor-borda);
-    transition: all 0.2s;
-  }
-  .meta-rodape-inicio a:hover {
-    color: var(--azul);
-    border-color: var(--azul);
-  }
+    .botao-nav:hover::after,
+    .botao-nav:focus-visible::after,
+    .botao-nav.ativo::after {
+      width: 100%;
+    }
 
-  .espacamento-secao { padding: 64px 0 88px; }
+    .botao-nav.ativo {
+      color: var(--azul);
+      font-weight: 600;
+    }
 
-  .cabecalho-secao {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 20px;
-    margin-bottom: 48px;
-    flex-wrap: wrap;
-    border-bottom: 1px solid var(--cor-borda);
-    padding-bottom: 16px;
-  }
-  .cabecalho-secao h2 {
-    font-family: var(--fonte-titulos);
-    font-style: italic;
-    font-size: clamp(32px, 4vw, 48px);
-    font-weight: 500;
-    letter-spacing: -0.01em;
-  }
-  .sub-secao {
-    font-family: var(--fonte-mono);
-    font-size: 12px;
-    color: var(--azul);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
+    .botao-tema {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px 6px 10px;
+      background: var(--papel-superficie);
+      border: 1px solid var(--cor-borda);
+      border-radius: 999px;
+      color: var(--tinta);
+      font-family: var(--fonte-mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
 
-  .envoltorio-a4 {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-  }
+    .botao-tema:hover {
+      border-color: var(--azul);
+    }
 
-  .folha-a4 {
-    background: var(--papel-cartao);
-    color: var(--tinta);
-    width: 100%;
-    max-width: 820px;
-    min-height: 1100px;
-    padding: 56px 64px;
-    box-shadow: var(--sombra-a4);
-    border: 1px solid var(--cor-borda);
-    border-radius: 2px;
-    position: relative;
-    box-sizing: border-box;
-  }
+    .icone-tema {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--azul-suave);
+      color: var(--azul);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+    }
 
-  .cabecalho-a4 {
-    text-align: center;
-    border-bottom: 2px solid var(--tinta);
-    padding-bottom: 24px;
-    margin-bottom: 32px;
-  }
-  .nome-a4 {
-    font-family: var(--fonte-titulos);
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    color: var(--tinta);
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
-  .contatos-a4 {
-    font-family: var(--fonte-mono);
-    font-size: 12.5px;
-    color: var(--tinta-suave);
-    margin-bottom: 8px;
-  }
-  .links-a4 {
-    font-family: var(--fonte-mono);
-    font-size: 12px;
-    color: var(--azul);
-    display: flex;
-    justify-content: center;
-    gap: 18px;
-  }
-  .links-a4 a:hover { text-decoration: underline; }
+    .secao-pagina {
+      display: none !important;
+    }
 
-  .secao-a4 { margin-bottom: 28px; }
-  .titulo-a4 {
-    font-family: var(--fonte-mono);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--azul);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 14px;
-    border-bottom: 1px dashed var(--cor-borda);
-    padding-bottom: 4px;
-  }
-  .titulo-a4::before {
-    content: "▌";
-    color: var(--azul);
-  }
+    .secao-pagina.ativa {
+      display: block !important;
+      animation: esvanecerSecao .3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
 
-  .corpo-a4 {
-    font-family: var(--fonte-titulos);
-    font-size: 15px;
-    color: var(--tinta-suave);
-    line-height: 1.6;
-  }
+    .inicio.secao-pagina.ativa {
+      display: flex !important;
+    }
 
-  .grade-habilidades-a4 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px;
-  }
-  .bloco-habilidade-a4 {
-    background: var(--papel-superficie);
-    border: 1px solid var(--cor-borda);
-    padding: 14px 16px;
-    border-radius: var(--raio);
-  }
-  .rotulo-habilidade-a4 {
-    font-family: var(--fonte-mono);
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--tinta);
-    margin-bottom: 6px;
-    display: block;
-  }
-  .valor-habilidade-a4 {
-    font-family: var(--fonte-mono);
-    font-size: 12.5px;
-    color: var(--tinta-suave);
-    line-height: 1.5;
-  }
+    @keyframes esvanecerSecao {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
 
-  .entrada-a4 { margin-bottom: 18px; }
-  .cabecalho-entrada-a4 {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 4px;
-  }
-  .titulo-entrada-a4 {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--tinta);
-  }
-  .sub-entrada-a4 {
-    font-family: var(--fonte-mono);
-    font-size: 12px;
-    color: var(--azul);
-  }
-  .etiquetas-entrada-a4 {
-    font-family: var(--fonte-mono);
-    font-size: 11px;
-    color: var(--suave);
-    margin-bottom: 6px;
-  }
-  .descricao-entrada-a4 {
-    font-size: 14px;
-    color: var(--tinta-suave);
-  }
-  .descricao-entrada-a4 p { margin-bottom: 4px; }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-  .contenedor-pranchas {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-  }
+    .inicio {
+      min-height: calc(100vh - 68px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 0 60px;
+      position: relative;
+    }
 
-  .prancha {
-    background: var(--papel-superficie);
-    border: 1px solid var(--cor-borda);
-    border-radius: var(--raio);
-    padding: 40px;
-    position: relative;
-    transition: border-color 0.25s ease;
-  }
-  .prancha:hover {
-    border-color: var(--azul);
-  }
+    .inicio h1 {
+      font-family: var(--fonte-titulos);
+      font-style: italic;
+      font-size: clamp(40px, 7vw, 84px);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.08;
+      margin-bottom: 24px;
+      max-width: 900px;
+    }
 
-  .prancha-v1 {
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 40px;
-    align-items: center;
-  }
+    .inicio h1 em {
+      font-style: italic;
+      color: var(--azul);
+      display: inline-block;
+    }
 
-  .prancha-v2 {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 40px;
-    align-items: center;
-  }
+    .cargo-inicio {
+      margin: 0 auto;
+      max-width: 650px;
+      font-size: clamp(16px, 2.1vw, 20px);
+      color: var(--tinta-suave);
+      font-weight: 400;
+      line-height: 1.6;
+    }
 
-  .prancha-v3 {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-  }
+    .acoes-inicio {
+      margin-top: 40px;
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-  .numero-prancha {
-    font-family: var(--fonte-titulos);
-    font-style: italic;
-    font-size: clamp(36px, 5vw, 64px);
-    color: var(--azul);
-    line-height: 1;
-    margin-bottom: 8px;
-    opacity: 0.9;
-  }
+    .botao-pula {
+      font-family: var(--fonte-mono);
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #921A3D;
+      border: 1px solid #921A3D;
+      border-radius: 999px;
+      padding: 13px 28px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 14px rgba(146, 26, 61, 0.25);
+    }
 
-  .titulo-prancha {
-    font-family: var(--fonte-titulos);
-    font-style: italic;
-    font-size: clamp(24px, 3vw, 32px);
-    font-weight: 500;
-    color: var(--tinta);
-    margin-bottom: 12px;
-  }
+    .botao-pula:hover {
+      background: #60001B;
+      border-color: #60001B;
+      box-shadow: 0 6px 18px rgba(146, 26, 61, 0.35);
+    }
 
-  .descricao-prancha {
-    font-size: 15.5px;
-    color: var(--tinta-suave);
-    line-height: 1.65;
-    margin-bottom: 20px;
-  }
+    .botao-pula.secundario {
+      background: transparent;
+      color: var(--tinta);
+      border-color: var(--cor-borda);
+      box-shadow: none;
+    }
 
-  .etiquetas-prancha {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
-  }
+    .botao-pula.secundario:hover {
+      border-color: var(--azul);
+      color: var(--azul);
+      background: var(--papel-superficie);
+    }
 
-  .etiqueta-blueprint {
-    font-family: var(--fonte-mono);
-    font-size: 11px;
-    padding: 4px 10px;
-    border: 1px solid var(--cor-borda);
-    color: var(--azul);
-    background: var(--azul-suave);
-    border-radius: var(--raio);
-  }
+    .meta-rodape-inicio {
+      margin-top: 56px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 32px;
+      font-family: var(--fonte-mono);
+      font-size: 13px;
+      color: var(--suave);
+    }
 
-  .acoes-prancha {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-  }
+    .item-meta-inicio {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-  .visual-prancha {
-    background: var(--papel-cartao);
-    border: 1px solid var(--cor-borda);
-    border-radius: var(--raio);
-    padding: 24px;
-    min-height: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .visual-prancha svg {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+    .meta-rodape-inicio a {
+      color: var(--tinta);
+      border-bottom: 1px dashed var(--cor-borda);
+      transition: all 0.2s;
+    }
 
-  .caixa-contato {
-    background: var(--papel-superficie);
-    border: 1px solid var(--cor-borda);
-    border-radius: var(--raio);
-    padding: 56px 48px;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 48px;
-  }
+    .meta-rodape-inicio a:hover {
+      color: var(--azul);
+      border-color: var(--azul);
+    }
 
-  .titulo-contato {
-    font-family: var(--fonte-titulos);
-    font-style: italic;
-    font-size: clamp(36px, 5vw, 56px);
-    font-weight: 500;
-    line-height: 1.1;
-    margin-bottom: 16px;
-  }
-  .titulo-contato em { color: var(--azul); font-style: italic; }
+    .espacamento-secao {
+      padding: 64px 0 88px;
+    }
 
-  .texto-introducao-contato {
-    font-size: 16px;
-    color: var(--tinta-suave);
-    max-width: 440px;
-  }
+    .cabecalho-secao {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 20px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--cor-borda);
+      padding-bottom: 16px;
+    }
 
-  .metodos-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-  }
+    .cabecalho-secao h2 {
+      font-family: var(--fonte-titulos);
+      font-style: italic;
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
 
-  .linha-contato {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 12px;
-    border-bottom: 1px dashed var(--cor-borda);
-  }
-  .valor-linha-contato {
-    font-family: var(--fonte-mono);
-    font-size: 14px;
-    color: var(--tinta);
-  }
-  .botao-copiar-contato {
-    font-family: var(--fonte-mono);
-    font-size: 11px;
-    color: var(--azul);
-    background: var(--azul-suave);
-    border: 1px solid var(--cor-borda);
-    padding: 4px 10px;
-    border-radius: var(--raio);
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  .botao-copiar-contato:hover {
-    background: var(--azul);
-    color: #ffffff;
-  }
+    .sub-secao {
+      font-family: var(--fonte-mono);
+      font-size: 12px;
+      color: var(--azul);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
 
-  .creditos-rodape {
-    margin-top: 48px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--fonte-mono);
-    font-size: 11.5px;
-    color: var(--suave);
-    flex-wrap: wrap;
-    gap: 12px;
-    padding-top: 24px;
-    border-top: 1px solid var(--cor-borda);
-  }
+    .envoltorio-a4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+    }
 
-  .notificacao {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    background: var(--fundo-notificacao);
-    color: var(--texto-notificacao);
-    font-family: var(--fonte-mono);
-    font-size: 12px;
-    padding: 12px 20px;
-    border-radius: 4px;
-    z-index: 200;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    transform: translateY(100px);
-    opacity: 0;
-    transition: all 0.3s ease;
-  }
-  .notificacao.exibir {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    .folha-a4 {
+      background: var(--papel-cartao);
+      color: var(--tinta);
+      width: 100%;
+      max-width: 820px;
+      min-height: 1100px;
+      padding: 56px 64px;
+      box-shadow: var(--sombra-a4);
+      border: 1px solid var(--cor-borda);
+      border-radius: 2px;
+      position: relative;
+      box-sizing: border-box;
+    }
 
-  @media (max-width: 860px) {
-    .folha-a4 { padding: 36px 24px; min-height: auto; }
-    .prancha-v1, .prancha-v2 { grid-template-columns: 1fr; gap: 28px; }
-    .caixa-contato { grid-template-columns: 1fr; gap: 36px; padding: 36px 24px; }
-  }
+    .cabecalho-a4 {
+      text-align: center;
+      border-bottom: 2px solid var(--tinta);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
 
-  @media (max-width: 640px) {
-    .contenedor { padding: 0 16px; }
-    .nav-interna { flex-wrap: wrap; height: auto; padding: 12px 0; gap: 12px; }
-    nav ul { gap: 14px; flex-wrap: wrap; }
-    .inicio { padding: 50px 0 30px; }
-    .cabecalho-a4 { padding-bottom: 16px; margin-bottom: 20px; }
-    .nome-a4 { font-size: 24px; }
-    .contatos-a4, .links-a4 { font-size: 11px; flex-wrap: wrap; justify-content: center; }
-  }
-</style>
+    .nome-a4 {
+      font-family: var(--fonte-titulos);
+      font-size: 32px;
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--tinta);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .contatos-a4 {
+      font-family: var(--fonte-mono);
+      font-size: 12.5px;
+      color: var(--tinta-suave);
+      margin-bottom: 8px;
+    }
+
+    .links-a4 {
+      font-family: var(--fonte-mono);
+      font-size: 12px;
+      color: var(--azul);
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+    }
+
+    .links-a4 a:hover {
+      text-decoration: underline;
+    }
+
+    .secao-a4 {
+      margin-bottom: 28px;
+    }
+
+    .titulo-a4 {
+      font-family: var(--fonte-mono);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--azul);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      border-bottom: 1px dashed var(--cor-borda);
+      padding-bottom: 4px;
+    }
+
+    .titulo-a4::before {
+      content: "▌";
+      color: var(--azul);
+    }
+
+    .corpo-a4 {
+      font-family: var(--fonte-titulos);
+      font-size: 15px;
+      color: var(--tinta-suave);
+      line-height: 1.6;
+    }
+
+    .grade-habilidades-a4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .bloco-habilidade-a4 {
+      background: var(--papel-superficie);
+      border: 1px solid var(--cor-borda);
+      padding: 14px 16px;
+      border-radius: var(--raio);
+    }
+
+    .rotulo-habilidade-a4 {
+      font-family: var(--fonte-mono);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--tinta);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .valor-habilidade-a4 {
+      font-family: var(--fonte-mono);
+      font-size: 12.5px;
+      color: var(--tinta-suave);
+      line-height: 1.5;
+    }
+
+    .entrada-a4 {
+      margin-bottom: 18px;
+    }
+
+    .cabecalho-entrada-a4 {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+
+    .titulo-entrada-a4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--tinta);
+    }
+
+    .sub-entrada-a4 {
+      font-family: var(--fonte-mono);
+      font-size: 12px;
+      color: var(--azul);
+    }
+
+    .etiquetas-entrada-a4 {
+      font-family: var(--fonte-mono);
+      font-size: 11px;
+      color: var(--suave);
+      margin-bottom: 6px;
+    }
+
+    .descricao-entrada-a4 {
+      font-size: 14px;
+      color: var(--tinta-suave);
+    }
+
+    .descricao-entrada-a4 p {
+      margin-bottom: 4px;
+    }
+
+    .contenedor-pranchas {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+    }
+
+    .prancha {
+      background: var(--papel-superficie);
+      border: 1px solid var(--cor-borda);
+      border-radius: var(--raio);
+      padding: 40px;
+      position: relative;
+      transition: border-color 0.25s ease;
+    }
+
+    .prancha:hover {
+      border-color: var(--azul);
+    }
+
+    .prancha-v1 {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .prancha-v2 {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .prancha-v3 {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .numero-prancha {
+      font-family: var(--fonte-titulos);
+      font-style: italic;
+      font-size: clamp(36px, 5vw, 64px);
+      color: var(--azul);
+      line-height: 1;
+      margin-bottom: 8px;
+      opacity: 0.9;
+      display: inline-block;
+    }
+
+    .titulo-prancha {
+      font-family: var(--fonte-titulos);
+      font-style: italic;
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 500;
+      color: var(--tinta);
+      margin-bottom: 12px;
+    }
+
+    .descricao-prancha {
+      font-size: 15.5px;
+      color: var(--tinta-suave);
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+
+    .etiquetas-prancha {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .etiqueta-blueprint {
+      font-family: var(--fonte-mono);
+      font-size: 11px;
+      padding: 4px 10px;
+      border: 1px solid var(--cor-borda);
+      color: var(--azul);
+      background: var(--azul-suave);
+      border-radius: var(--raio);
+      display: inline-block;
+    }
+
+    .acoes-prancha {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .visual-prancha {
+      background: var(--papel-cartao);
+      border: 1px solid var(--cor-borda);
+      border-radius: var(--raio);
+      padding: 24px;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .visual-prancha svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .midia-prancha {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+    }
+
+    .caixa-contato {
+      background: var(--papel-superficie);
+      border: 1px solid var(--cor-borda);
+      border-radius: var(--raio);
+      padding: 56px 48px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 48px;
+    }
+
+    .titulo-contato {
+      font-family: var(--fonte-titulos);
+      font-style: italic;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    .titulo-contato em {
+      color: var(--azul);
+      font-style: italic;
+    }
+
+    .texto-introducao-contato {
+      font-size: 16px;
+      color: var(--tinta-suave);
+      max-width: 440px;
+    }
+
+    .metodos-contato {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .linha-contato {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 12px;
+      border-bottom: 1px dashed var(--cor-borda);
+    }
+
+    .valor-linha-contato {
+      font-family: var(--fonte-mono);
+      font-size: 14px;
+      color: var(--tinta);
+    }
+
+    .botao-copiar-contato {
+      font-family: var(--fonte-mono);
+      font-size: 11px;
+      color: var(--azul);
+      background: var(--azul-suave);
+      border: 1px solid var(--cor-borda);
+      padding: 4px 10px;
+      border-radius: var(--raio);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .botao-copiar-contato:hover {
+      background: #921A3D;
+      color: #ffffff;
+    }
+
+    .creditos-rodape {
+      margin-top: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--fonte-mono);
+      font-size: 11.5px;
+      color: var(--suave);
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-top: 24px;
+      border-top: 1px solid var(--cor-borda);
+    }
+
+    .notificacao {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--fundo-notificacao);
+      color: var(--texto-notificacao);
+      font-family: var(--fonte-mono);
+      font-size: 12px;
+      padding: 12px 20px;
+      border-radius: 4px;
+      z-index: 200;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .notificacao.exibir {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    @media (max-width: 860px) {
+      .folha-a4 {
+        padding: 36px 24px;
+        min-height: auto;
+      }
+
+      .prancha-v1,
+      .prancha-v2 {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .caixa-contato {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        padding: 36px 24px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .contenedor {
+        padding: 0 16px;
+      }
+
+      .nav-interna {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 0;
+        gap: 12px;
+      }
+
+      nav ul {
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .inicio {
+        padding: 50px 0 30px;
+      }
+
+      .cabecalho-a4 {
+        padding-bottom: 16px;
+        margin-bottom: 20px;
+      }
+
+      .contatos-a4,
+      .links-a4 {
+        font-size: 11px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    /* ==========================================
+       CONFIGURAÇÃO EXCLUSIVA DE IMPRESSÃO / PDF
+       ========================================== */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 12mm 15mm 10mm 15mm;
+      }
+
+      /* Força todas as cores do texto para Preto Absoluto (#000000) */
+      *,
+      *::before,
+      *::after {
+        color: #000000 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      html,
+      body {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        overflow: visible !important;
+      }
+
+      /* Oculta apenas os elementos do site fora do currículo */
+      header.cabecalho-principal,
+      .acoes-inicio,
+      .notificacao,
+      .botao-pula,
+      #alternarTema,
+      .btn-imprimir,
+      #canvasGrid,
+      .cabecalho-secao,
+      #inicio,
+      #projetos,
+      #contato {
+        display: none !important;
+      }
+
+      #curriculo,
+      .envoltorio-a4 {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        display: block !important;
+      }
+
+      .folha-a4 {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+        display: block !important;
+        box-sizing: border-box !important;
+      }
+
+      /* Cabeçalho do Currículo em Destaque */
+      .cabecalho-a4 {
+        display: block !important;
+        margin-bottom: 16px !important;
+        padding-bottom: 10px !important;
+        border-bottom: 2px solid #000000 !important;
+        text-align: center !important;
+      }
+
+      .nome-a4 {
+        font-size: 26pt !important;
+        font-weight: 800 !important;
+        color: #000000 !important;
+        margin-bottom: 6px !important;
+        letter-spacing: 0.04em !important;
+        text-transform: uppercase !important;
+        display: block !important;
+      }
+
+      .contatos-a4,
+      .links-a4 {
+        font-size: 9.5pt !important;
+        color: #000000 !important;
+        margin-bottom: 4px !important;
+      }
+
+      .links-a4 a {
+        color: #000000 !important;
+        text-decoration: underline !important;
+      }
+
+      /* Seções e Bloco de Conteúdo */
+      .secao-a4 {
+        margin-bottom: 14px !important;
+        page-break-inside: avoid !important;
+      }
+
+      .titulo-a4 {
+        margin-bottom: 6px !important;
+        padding-bottom: 2px !important;
+        font-size: 10.5pt !important;
+        font-weight: 700 !important;
+        color: #000000 !important;
+        border-bottom: 1px solid #000000 !important;
+        letter-spacing: 0.08em !important;
+      }
+
+      .titulo-a4::before {
+        content: "▌ " !important;
+        color: #000000 !important;
+      }
+
+      .corpo-a4,
+      .descricao-entrada-a4,
+      .valor-habilidade-a4,
+      .descricao-entrada-a4 p {
+        font-size: 9.5pt !important;
+        line-height: 1.4 !important;
+        color: #000000 !important;
+      }
+
+      .titulo-entrada-a4 {
+        font-size: 11pt !important;
+        font-weight: 700 !important;
+        color: #000000 !important;
+      }
+
+      .sub-entrada-a4,
+      .etiquetas-entrada-a4 {
+        font-size: 9pt !important;
+        color: #000000 !important;
+      }
+
+      .entrada-a4 {
+        margin-bottom: 10px !important;
+      }
+
+      .grade-habilidades-a4 {
+        display: flex !important;
+        gap: 10px !important;
+      }
+
+      .bloco-habilidade-a4 {
+        flex: 1 !important;
+        padding: 8px 10px !important;
+        border: 1px solid #000000 !important;
+        background: #ffffff !important;
+        border-radius: 2px !important;
+      }
+
+      .rotulo-habilidade-a4 {
+        font-size: 8.5pt !important;
+        font-weight: 700 !important;
+        color: #000000 !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <div class="contenedor nav-interna">
-    <button type="button" class="marca" data-alvo="inicio">
-      YARA<span>.Dev</span>
-    </button>
-    
-    <nav>
-      <ul>
-        <li><button type="button" class="botao-nav ativo" data-alvo="inicio">Início</button></li>
-        <li><button type="button" class="botao-nav" data-alvo="projetos">Projetos</button></li>
-        <li><button type="button" class="botao-nav" data-alvo="curriculo">Currículo</button></li>
-        <li><button type="button" class="botao-nav" data-alvo="contato">Contato</button></li>
-      </ul>
-    </nav>
+  <canvas id="canvasGrid" aria-hidden="true"></canvas>
 
-    <div>
-      <button type="button" id="alternarTema" class="botao-tema" title="Alternar modo claro/escuro">
-        <span class="icone-tema" id="iconeTema">🌙</span>
-        <span id="rotuloTema">Escuro</span>
+  <header class="cabecalho-principal">
+    <div class="contenedor nav-interna">
+      <button type="button" class="marca" data-alvo="inicio">
+        Createdby<span>.Yara</span>
       </button>
-    </div>
-  </div>
-</header>
 
-<main>
+      <nav>
+        <ul>
+          <li><button type="button" class="botao-nav ativo" data-alvo="inicio">Início</button></li>
+          <li><button type="button" class="botao-nav" data-alvo="projetos">Projetos</button></li>
+          <li><button type="button" class="botao-nav" data-alvo="curriculo">Currículo</button></li>
+          <li><button type="button" class="botao-nav" data-alvo="contato">Contato</button></li>
+        </ul>
+      </nav>
 
-  <section id="inicio" class="inicio secao-pagina ativa">
-    <div class="contenedor">
-      <h1>Olá, Eu sou <br><em> Yara Nascimento da Silva.</em></h1>
-      
-      <p class="cargo-inicio">
-        Estudante de Desenvolvimento de Software Multiplataforma na FATEC Itaquera, 
-        em busca de uma oportunidade de estágio na área de tecnologia.
-      </p>
-
-      <div class="acoes-inicio">
-        <button type="button" class="botao-pula" data-alvo="projetos">
-          Ver Projetos ↓
-        </button>
-        <button type="button" class="botao-pula secundario" data-alvo="curriculo">
-          Ver Currículo
-        </button>
-        <button type="button" class="botao-pula secundario" data-alvo="contato">
-          Contato
+      <div>
+        <button type="button" id="alternarTema" class="botao-tema" title="Alternar modo claro/escuro">
+          <span class="icone-tema" id="iconeTema">🌙</span>
+          <span id="rotuloTema">Escuro</span>
         </button>
       </div>
-
-      <div class="meta-rodape-inicio">
-        <span class="item-meta-inicio">
-          ✉️ <a href="mailto:nas.silvayara@gmail.com">nas.silvayara@gmail.com</a>
-        </span>
-        <span class="item-meta-inicio">
-          📱 <a href="tel:+5511976280711">(11) 97628-0711</a>
-        </span>
-        <span class="item-meta-inicio">
-          🔗 <a href="https://github.com/NasSilvaYara" target="_blank" rel="noopener">GitHub ↗</a>
-        </span>
-      </div>
     </div>
-  </section>
+  </header>
 
-  <section id="projetos" class="secao-pagina espacamento-secao">
-    <div class="contenedor">
-      <div class="cabecalho-secao">
-        <h2>Meus Projetos</h2>
-        <span class="sub-secao">Na prática</span>
+  <main>
+
+    <section id="inicio" class="inicio secao-pagina ativa">
+      <div class="contenedor">
+        <h1>Olá, Eu sou <br><em> Yara Nascimento da Silva.</em></h1>
+
+        <p class="cargo-inicio">
+          Estudante de Desenvolvimento de Software Multiplataforma na FATEC Itaquera,
+          em busca de uma oportunidade de estágio na área de tecnologia.
+        </p>
+
+        <div class="acoes-inicio">
+          <button type="button" class="botao-pula" data-alvo="projetos">
+            Ver Projetos ↓
+          </button>
+          <button type="button" class="botao-pula secundario" data-alvo="curriculo">
+            Ver Currículo
+          </button>
+          <button type="button" class="botao-pula secundario" data-alvo="contato">
+            Contato
+          </button>
+        </div>
+
+        <div class="meta-rodape-inicio">
+          <span class="item-meta-inicio">
+            <a href="mailto:nas.silvayara@gmail.com">nas.silvayara@gmail.com</a>
+          </span>
+          <span class="item-meta-inicio">
+            <a href="tel:+5511976280711">(11) 97628-0711</a>
+          </span>
+          <span class="item-meta-inicio">
+            <a href="https://github.com/NasSilvaYara" target="_blank" rel="noopener">GitHub ↗</a>
+          </span>
+        </div>
       </div>
+    </section>
 
-      <div class="contenedor-pranchas">
-        <!-- Prancha 03 -->
-        <article class="prancha prancha-v3">
-          <div>
-            <div class="visual-prancha">
-            <svg viewBox="0 0 700 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="700" height="160" rx="4" fill="var(--papel-superficie)"/>
-              <rect x="30" y="30" width="180" height="100" rx="4" fill="var(--papel-cartao)" stroke="var(--cor-borda)"/>
-              <text x="45" y="60" font-family="JetBrains Mono" font-size="10" fill="var(--azul)">1. LEVANTAMENTO DE REQUISITOS</text>
-              <text x="45" y="85" font-family="JetBrains Mono" font-size="9" fill="var(--suave)">Documentação &amp; Acervo</text>
-              <line x1="210" y1="80" x2="260" y2="80" stroke="var(--azul)" stroke-width="2"/>
-              <rect x="260" y="30" width="180" height="100" rx="4" fill="var(--papel-cartao)" stroke="var(--cor-borda)"/>
-              <text x="275" y="60" font-family="JetBrains Mono" font-size="10" fill="var(--azul)">2. ELEVENTY (11ty) SSG</text>
-              <text x="275" y="85" font-family="JetBrains Mono" font-size="9" fill="var(--suave)">Geração Estática</text>
-              <line x1="440" y1="80" x2="490" y2="80" stroke="var(--azul)" stroke-width="2"/>
-              <rect x="490" y="30" width="180" height="100" rx="4" fill="var(--papel-cartao)" stroke="var(--cor-borda)"/>
-              <text x="505" y="60" font-family="JetBrains Mono" font-size="10" fill="var(--azul)">3. SPRINTS KANBAN</text>
-              <text x="505" y="85" font-family="JetBrains Mono" font-size="9" fill="var(--suave)">Fluxo Contínuo</text>
-            </svg>
-          </div>
-            <div class="numero-prancha">01</div>
-            <h3 class="titulo-prancha">Projeto Memorial Carandiru</h3>
-            <p class="descricao-prancha">
-              Levantamento de requisitos e desenvolvimento web utilizando HTML5, CSS3, JavaScript e Eleventy (11ty).
-              Estruturação da navegação e organização do fluxo de trabalho da equipe utilizando metodologia ágil Kanban.
-            </p>
-            <div class="etiquetas-prancha">
-              <span class="etiqueta-blueprint">Eleventy (11ty)</span>
-              <span class="etiqueta-blueprint">JavaScript</span>
-              <span class="etiqueta-blueprint">HTML5</span>
-              <span class="etiqueta-blueprint">CSS3</span>
-              <span class="etiqueta-blueprint">Kanban</span>
+    <section id="projetos" class="secao-pagina espacamento-secao">
+      <div class="contenedor">
+        <div class="cabecalho-secao">
+          <h2>Meus Projetos</h2>
+          <span class="sub-secao">Na prática</span>
+        </div>
+
+        <div class="contenedor-pranchas">
+
+          <!-- Prancha 01: Memorial Carandiru -->
+          <article class="prancha prancha-v1">
+            <div class="visual-prancha" style="padding: 0; overflow: hidden; border: 1px solid var(--cor-borda);">
+              <img src="imagem-carandiru.png" alt="Preview do site Espaço Memória Carandiru" class="midia-prancha">
             </div>
-            <div class="acoes-prancha">
-              <a class="botao-pula" href="https://github.com/davinyleticia/espaco-memorial-carandiru" target="_blank" rel="noopener">Acessar Repositório ↗</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-        <!-- Prancha 01 -->
-        <article class="prancha prancha-v1">
-          <div>
-            <div class="visual-prancha">
-            <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="220" rx="4" fill="var(--papel-superficie)"/>
-              <path d="M 40 110 L 130 110 L 200 60 L 340 60" stroke="var(--azul)" stroke-width="2" stroke-dasharray="4 4"/>
-              <path d="M 130 110 L 200 160 L 340 160" stroke="var(--azul)" stroke-width="2"/>
-              <circle cx="40" cy="110" r="8" fill="var(--azul)"/>
-              <rect x="190" y="40" width="130" height="40" rx="4" fill="var(--papel-cartao)" stroke="var(--cor-borda)"/>
-              <text x="210" y="65" font-family="JetBrains Mono" font-size="10" fill="var(--tinta)">GET /ongs/localizacao</text>
-              <rect x="190" y="140" width="130" height="40" rx="4" fill="var(--papel-cartao)" stroke="var(--cor-borda)"/>
-              <text x="210" y="165" font-family="JetBrains Mono" font-size="10" fill="var(--tinta)">Fluxo Web Scraping</text>
-              <text x="50" y="100" font-family="JetBrains Mono" font-size="9" fill="var(--suave)">SOLICITAÇÃO DO PACIENTE</text>
-            </svg>
-          </div>
-            <div class="numero-prancha">02</div>
-            <h3 class="titulo-prancha">Plataforma De Mapeamento de ONGs — Apoio Oncológico</h3>
-            <p class="descricao-prancha">
-              API RESTful em Python e MySQL para conectar pacientes a doadoras de perucas por localização.
-              Possui automação de cadastro e atualização de dados das ONGs por meio de Web Scraping.
-            </p>
-            <div class="etiquetas-prancha">
-              <span class="etiqueta-blueprint">Python</span>
-              <span class="etiqueta-blueprint">MySQL</span>
-              <span class="etiqueta-blueprint">API REST</span>
-              <span class="etiqueta-blueprint">Web Scraping</span>
-              <span class="etiqueta-blueprint">JavaScript</span>
-            </div>
-            <div class="acoes-prancha">
-              <a class="botao-pula" href="https://github.com/NasSilvaYara/marcella_MasterDesign" target="_blank" rel="noopener">Acessar Repositório ↗</a>
-            </div>
-          </div>
-
-        </article>
-
-        <!-- Prancha 02 -->
-        <article class="prancha prancha-v2">
-          <div class="visual-prancha">
-            <svg viewBox="0 0 400 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="400" height="220" rx="4" fill="var(--papel-superficie)"/>
-              <rect x="40" y="30" width="320" height="160" rx="4" fill="var(--papel-cartao)" stroke="var(--cor-borda)"/>
-              <line x1="40" y1="70" x2="360" y2="70" stroke="var(--cor-borda)"/>
-              <circle cx="60" cy="50" r="4" fill="var(--azul)"/>
-              <circle cx="75" cy="50" r="4" fill="var(--cor-borda)"/>
-              <circle cx="90" cy="50" r="4" fill="var(--cor-borda)"/>
-              <text x="110" y="54" font-family="JetBrains Mono" font-size="10" fill="var(--suave)">Esquema BD CRUD Agendamentos</text>
-              <rect x="60" y="90" width="120" height="80" rx="2" stroke="var(--azul)" stroke-width="1.5" fill="none"/>
-              <text x="70" y="110" font-family="JetBrains Mono" font-size="9" fill="var(--azul)">CLIENTES (MySQL)</text>
-              <text x="70" y="130" font-family="JetBrains Mono" font-size="8" fill="var(--suave)">• id_cliente INT PK</text>
-              <text x="70" y="145" font-family="JetBrains Mono" font-size="8" fill="var(--suave)">• nome VARCHAR</text>
-              <rect x="220" y="90" width="120" height="80" rx="2" stroke="var(--azul)" stroke-width="1.5" fill="none"/>
-              <text x="230" y="110" font-family="JetBrains Mono" font-size="9" fill="var(--azul)">AGENDAS (PHP)</text>
-              <text x="230" y="130" font-family="JetBrains Mono" font-size="8" fill="var(--suave)">• id_agendamento PK</text>
-              <text x="230" y="145" font-family="JetBrains Mono" font-size="8" fill="var(--suave)">• data_hora DATETIME</text>
-              <line x1="180" y1="130" x2="220" y2="130" stroke="var(--azul)" stroke-width="2"/>
-            </svg>
-          </div>
-
-          <div>
-            <div class="numero-prancha">03</div>
-            <h3 class="titulo-prancha">Sistema de Agendamento — Salão de Beleza</h3>
-            <p class="descricao-prancha">
-              Desenvolvimento de aplicação Full Stack para gerenciamento de clientes e horários.
-              Implementação completa de operações CRUD para persistência e gestão dos dados com PHP e MySQL.
-            </p>
-            <div class="etiquetas-prancha">
-              <span class="etiqueta-blueprint">PHP</span>
-              <span class="etiqueta-blueprint">MySQL</span>
-              <span class="etiqueta-blueprint">JavaScript</span>
-              <span class="etiqueta-blueprint">HTML5</span>
-              <span class="etiqueta-blueprint">CSS3</span>
-            </div>
-          </div>
-        </article>
-
-        
-    </div>
-  </section>
-
-  <section id="curriculo" class="secao-pagina espacamento-secao">
-    <div class="contenedor">
-      <div class="cabecalho-secao">
-        <h2>Meu Currículo</h2>
-        <span class="sub-secao">Formato A4</span>
-      </div>
-
-      <div class="envoltorio-a4">
-        <div class="folha-a4">
-
-          <header class="cabecalho-a4">
-            <h1 class="nome-a4">Yara Nascimento da Silva</h1>
-            <p class="contatos-a4">São Paulo, SP • (11) 97628-0711 • nas.silvayara@gmail.com</p>
-            <div class="links-a4">
-              <a href="https://github.com/NasSilvaYara" target="_blank" rel="noopener">GitHub</a>
-              <span>•</span>
-              <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-            </div>
-          </header>
-
-          <!-- Resumo Profissional -->
-          <div class="secao-a4">
-            <h3 class="titulo-a4">Objetivo</h3>
-            <div class="corpo-a4">
-              Estágio em Desenvolvimento de Software, com interesse em desenvolvimento web, automação e construção de soluções digitais
-            </div>
-          </div>
-
-          <!-- Formação Acadêmica -->
-          <div class="secao-a4">
-            <h3 class="titulo-a4">Formação Acadêmica</h3>
-            
-            <div class="entrada-a4">
-              <div class="cabecalho-entrada-a4">
-                <span class="titulo-entrada-a4">FATEC Itaquera — Prof. Miguel Reale</span>
-                <span class="sub-entrada-a4">Em andamento</span>
+            <div>
+              <div class="numero-prancha">01</div>
+              <h3 class="titulo-prancha">Projeto Memorial Carandiru</h3>
+              <p class="descricao-prancha">
+                Levantamento de requisitos e desenvolvimento web utilizando HTML5, CSS3, JavaScript e Eleventy (11ty).
+                Estruturação da navegação e organização do fluxo de trabalho da equipe utilizando metodologia ágil
+                Kanban.
+              </p>
+              <div class="etiquetas-prancha">
+                <span class="etiqueta-blueprint">Eleventy (11ty)</span>
+                <span class="etiqueta-blueprint">JavaScript</span>
+                <span class="etiqueta-blueprint">HTML5</span>
+                <span class="etiqueta-blueprint">CSS3</span>
+                <span class="etiqueta-blueprint">Kanban</span>
               </div>
-              <div class="etiquetas-entrada-a4">Tecnólogo em Desenvolvimento de Software Multiplataforma (DSM)</div>
-            </div>
-
-            <div class="entrada-a4">
-              <div class="cabecalho-entrada-a4">
-                <span class="titulo-entrada-a4">ETEC — Ensino Técnico</span>
-                <span class="sub-entrada-a4">Concluído</span>
-              </div>
-              <div class="etiquetas-entrada-a4">Técnico em Desenvolvimento de Software Multiplataforma</div>
-            </div>
-          </div>
-
-          <!-- Habilidades Técnicas -->
-          <div class="secao-a4">
-            <h3 class="titulo-a4">Competências Técnicas</h3>
-            <div class="grade-habilidades-a4">
-              <div class="bloco-habilidade-a4">
-                <span class="rotulo-habilidade-a4">Linguagens &amp; Web</span>
-                <span class="valor-habilidade-a4">JavaScript (ES6+), Python, PHP, HTML5, CSS3</span>
-              </div>
-              <div class="bloco-habilidade-a4">
-                <span class="rotulo-habilidade-a4">Bancos de Dados &amp; Ferramentas</span>
-                <span class="valor-habilidade-a4">MySQL, Git, GitHub, Eleventy (11ty), Looker</span>
-              </div>
-              <div class="bloco-habilidade-a4">
-                <span class="rotulo-habilidade-a4">Conceitos &amp; Processos</span>
-                <span class="valor-habilidade-a4">APIs REST, Web Scraping, CRUD, Scrum, Kanban</span>
+              <div class="acoes-prancha">
+                <a class="botao-pula" href="https://github.com/davinyleticia/espaco-memorial-carandiru" target="_blank"
+                  rel="noopener">Acessar Repositório ↗</a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <!-- Experiência Acadêmica  -->
-          <div class="secao-a4">
-            <h3 class="titulo-a4">Experiência Acadêmica</h3>
-            
-            <div class="entrada-a4">
-              <div class="cabecalho-entrada-a4">
-                <span class="titulo-entrada-a4">Estagiária — Projeto Memorial Carandiru</span>
-                <span class="sub-entrada-a4">ETEC Parque da Juventude | Abr.2026 – Jun.2026 | 60 horas</span>
+          <!-- Prancha 02: Apoio Oncológico -->
+          <article class="prancha prancha-v2">
+            <div>
+              <div class="numero-prancha">02</div>
+              <h3 class="titulo-prancha">Plataforma De Mapeamento de ONGs — Apoio Oncológico</h3>
+              <p class="descricao-prancha">
+                API RESTful em Python e MySQL para conectar pacientes a doadoras de perucas por localização.
+                Possui automação de cadastro e atualização de dados das ONGs por meio de Web Scraping.
+              </p>
+              <div class="etiquetas-prancha">
+                <span class="etiqueta-blueprint">Python</span>
+                <span class="etiqueta-blueprint">MySQL</span>
+                <span class="etiqueta-blueprint">API REST</span>
+                <span class="etiqueta-blueprint">Web Scraping</span>
+                <span class="etiqueta-blueprint">JavaScript</span>
               </div>
-              <div class="descricao-entrada-a4">
-                <p>• Levantamento de requisitos e desenvolvimento web utilizando HTML5, CSS3, JavaScript e Eleventy (11ty).</p>
-                <p>• Estruturação da navegação e organização do fluxo de trabalho da equipe utilizando metodologia ágil Kanban.</p>
+              <div class="acoes-prancha">
+                <a class="botao-pula" href="https://github.com/NasSilvaYara/Apoio-Onco4" target="_blank"
+                  rel="noopener">Acessar Repositório ↗</a>
               </div>
             </div>
-          </div>
+            <div class="visual-prancha" style="padding: 0; overflow: hidden; border: 1px solid var(--cor-borda);">
+              <img src="apoioOnco.png" alt="Preview da plataforma Apoio Oncológico" class="midia-prancha">
+            </div>
+          </article>
 
-          <!-- Experiência Profissional  -->
-          <div class="secao-a4">
-            <h3 class="titulo-a4">Experiência Profissional</h3>
-            
-            <div class="entrada-a4">
-              <div class="cabecalho-entrada-a4">
-                <span class="titulo-entrada-a4">Jovem Aprendiz Administrativo — Ouvidoria</span>
-                <span class="sub-entrada-a4">Hospital São Paulo | Jul. 2025 – Atual</span>
+          <!-- Prancha 03: Agendamento Salão -->
+          <article class="prancha prancha-v3">
+
+            <div>
+              <div class="numero-prancha">03</div>
+              <video src="video-marcella.mp4" poster="imagem-marcella.jpg" autoplay loop muted playsinline
+                class="midia-prancha">
+                Seu navegador não suporta a reprodução de vídeo.
+              </video>
+              <h3 class="titulo-prancha">Sistema de Agendamento — Salão de Beleza</h3>
+              <p class="descricao-prancha">
+                Desenvolvimento de aplicação Full Stack para gerenciamento de clientes e horários.
+                Implementação completa de operações CRUD para persistência e gestão dos dados com PHP e MySQL.
+              </p>
+              <div class="etiquetas-prancha">
+                <span class="etiqueta-blueprint">PHP</span>
+                <span class="etiqueta-blueprint">MySQL</span>
+                <span class="etiqueta-blueprint">JavaScript</span>
+                <span class="etiqueta-blueprint">HTML5</span>
+                <span class="etiqueta-blueprint">CSS3</span>
               </div>
-              <div class="descricao-entrada-a4">
-                <p>• Desenvolvimento de automações com Google Apps Script para otimização do tratamento de dados e acompanhamento de chamados.</p>
-                <p>• Controle de indicadores por meio do Google Sheets e apoio na gestão de solicitações entre usuários e setores internos</p>
+              <div class="acoes-prancha">
+                <a class="botao-pula" href="https://github.com/NasSilvaYara/marcella_MasterDesign" target="_blank"
+                  rel="noopener">Acessar Repositório ↗</a>
               </div>
             </div>
-          </div>
+          </article>
 
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contato" class="secao-pagina espacamento-secao">
-    <div class="contenedor">
-      <div class="caixa-contato">
-        <div>
-          <h2 class="titulo-contato">Vamos construir algo <em>incrível.</em></h2>
-          <p class="texto-introducao-contato">
-            Estou aberta a oportunidades de estágio, projetos freelances ou colaborações em desenvolvimento de software e automações.
-          </p>
+    <section id="curriculo" class="secao-pagina espacamento-secao">
+      <div class="contenedor">
+        <div class="cabecalho-secao">
+          <h2>Meu Currículo</h2>
+          <span class="sub-secao">Formato A4</span>
         </div>
-
-        <div class="metodos-contato">
-          <div class="linha-contato">
-            <div>
-              <div class="sub-secao">E-mail</div>
-              <div class="valor-linha-contato">nas.silvayara@gmail.com</div>
-            </div>
-            <button type="button" class="botao-copiar-contato" onclick="copiarTexto('nas.silvayara@gmail.com')">Copiar</button>
+        <div class="envoltorio-a4">
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+            <a href="curriculo-yara-da-silva.pdf" download="Curriculo_Yara_Da_Silva.pdf"
+              class="botao-pula btn-imprimir">
+              Baixar PDF / Imprimir
+            </a>
           </div>
 
-          <div class="linha-contato">
-            <div>
-              <div class="sub-secao">Telefone / WhatsApp</div>
-              <div class="valor-linha-contato">(11) 97628-0711</div>
-            </div>
-            <button type="button" class="botao-copiar-contato" onclick="copiarTexto('11976280711')">Copiar</button>
-          </div>
 
-          <div class="linha-contato">
-            <div>
-              <div class="sub-secao">GitHub</div>
-              <div class="valor-linha-contato">github.com/NasSilvaYara</div>
+          <div class="folha-a4">
+
+            <div class="cabecalho-a4">
+              <h1 class="nome-a4">Yara Nascimento da Silva</h1>
+              <p class="contatos-a4">São Paulo, SP • (11) 97628-0711 • nas.silvayara@gmail.com</p>
+              <div class="links-a4">
+                <a href="https://github.com/NasSilvaYara" target="_blank" rel="noopener">GitHub</a>
+                <span>•</span>
+                <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+              </div>
             </div>
-            <a href="https://github.com/NasSilvaYara" target="_blank" rel="noopener" class="botao-copiar-contato">Abrir ↗</a>
+
+            <div class="secao-a4">
+              <h3 class="titulo-a4">Objetivo</h3>
+              <div class="corpo-a4">
+                Estágio em Desenvolvimento de Software, com interesse em desenvolvimento web, automação e construção de
+                soluções digitais.
+              </div>
+            </div>
+
+            <div class="secao-a4">
+              <h3 class="titulo-a4">Formação Acadêmica</h3>
+
+              <div class="entrada-a4">
+                <div class="cabecalho-entrada-a4">
+                  <span class="titulo-entrada-a4">FATEC Itaquera — Prof. Miguel Reale</span>
+                  <span class="sub-entrada-a4">Em andamento</span>
+                </div>
+                <div class="etiquetas-entrada-a4">Tecnólogo em Desenvolvimento de Software Multiplataforma (DSM)</div>
+              </div>
+
+              <div class="entrada-a4">
+                <div class="cabecalho-entrada-a4">
+                  <span class="titulo-entrada-a4">ETEC — Ensino Técnico</span>
+                  <span class="sub-entrada-a4">Concluído</span>
+                </div>
+                <div class="etiquetas-entrada-a4">Técnico em Desenvolvimento de Sistemas</div>
+              </div>
+            </div>
+
+            <div class="secao-a4">
+              <h3 class="titulo-a4">Competências Técnicas</h3>
+              <div class="grade-habilidades-a4">
+                <div class="bloco-habilidade-a4">
+                  <span class="rotulo-habilidade-a4">Linguagens &amp; Web</span>
+                  <span class="valor-habilidade-a4">JavaScript (ES6+), Python, PHP, HTML5, CSS3</span>
+                </div>
+                <div class="bloco-habilidade-a4">
+                  <span class="rotulo-habilidade-a4">Bancos de Dados &amp; Ferramentas</span>
+                  <span class="valor-habilidade-a4">MySQL, Git, GitHub, Eleventy (11ty), Looker</span>
+                </div>
+                <div class="bloco-habilidade-a4">
+                  <span class="rotulo-habilidade-a4">Conceitos &amp; Processos</span>
+                  <span class="valor-habilidade-a4">APIs REST, Web Scraping, CRUD, Scrum, Kanban, Google Apps
+                    Script</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="secao-a4">
+              <h3 class="titulo-a4">Experiência Acadêmica</h3>
+
+              <div class="entrada-a4">
+                <div class="cabecalho-entrada-a4">
+                  <span class="titulo-entrada-a4">Estagiária — Projeto Memorial Carandiru</span>
+                  <span class="sub-entrada-a4">ETEC Parque da Juventude | Abr.2026 – Jun.2026 | 60 horas</span>
+                </div>
+                <div class="descricao-entrada-a4">
+                  <p>• Levantamento de requisitos e desenvolvimento web utilizando HTML5, CSS3, JavaScript e Eleventy
+                    (11ty).</p>
+                  <p>• Estruturação da navegação e organização do fluxo de trabalho da equipe utilizando metodologia
+                    ágil Kanban.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="secao-a4">
+              <h3 class="titulo-a4">Experiência Profissional</h3>
+
+              <div class="entrada-a4">
+                <div class="cabecalho-entrada-a4">
+                  <span class="titulo-entrada-a4">Jovem Aprendiz Administrativo — Ouvidoria</span>
+                  <span class="sub-entrada-a4">Hospital São Paulo | Jul. 2025 – Atual</span>
+                </div>
+                <div class="descricao-entrada-a4">
+                  <p>• Desenvolvimento de automações com Google Apps Script para otimização do tratamento de dados e
+                    acompanhamento de chamados.</p>
+                  <p>• Controle de indicadores por meio do Google Sheets e apoio na gestão de solicitações entre
+                    usuários e setores internos.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
+    </section>
 
-      <footer class="creditos-rodape">
-        <span>© 2026 Yara Nascimento da Silva. Todos os direitos reservados.</span>
-      </footer>
-    </div>
-  </section>
+    <section id="contato" class="secao-pagina espacamento-secao">
+      <div class="contenedor">
+        <div class="caixa-contato">
+          <div>
+            <h2 class="titulo-contato">Vamos construir algo <em>incrível.</em></h2>
+            <p class="texto-introducao-contato">
+              Estou aberta a oportunidades de estágio, projetos freelances ou colaborações em desenvolvimento de
+              software e automações.
+            </p>
+          </div>
 
-</main>
+          <div class="metodos-contato">
+            <div class="linha-contato">
+              <div>
+                <div class="sub-secao">E-mail</div>
+                <div class="valor-linha-contato">nas.silvayara@gmail.com</div>
+              </div>
+              <button type="button" class="botao-copiar-contato"
+                onclick="copiarTexto('nas.silvayara@gmail.com')">Copiar</button>
+            </div>
 
-<div id="notificacao" class="notificacao">Texto copiado para a área de transferência!</div>
+            <div class="linha-contato">
+              <div>
+                <div class="sub-secao">Telefone / WhatsApp</div>
+                <div class="valor-linha-contato">(11) 97628-0711</div>
+              </div>
+              <button type="button" class="botao-copiar-contato" onclick="copiarTexto('11976280711')">Copiar</button>
+            </div>
 
-<script>
-  const alternarTemaBtn = document.getElementById('alternarTema');
-  const iconeTema = document.getElementById('iconeTema');
-  const rotuloTema = document.getElementById('rotuloTema');
+            <div class="linha-contato">
+              <div>
+                <div class="sub-secao">GitHub</div>
+                <div class="valor-linha-contato">github.com/NasSilvaYara</div>
+              </div>
+              <a href="https://github.com/NasSilvaYara" target="_blank" rel="noopener"
+                class="botao-copiar-contato">Abrir ↗</a>
+            </div>
+          </div>
+        </div>
 
-  function definirTema(tema) {
-    document.documentElement.setAttribute('data-theme', tema);
-    if (tema === 'escuro') {
-      iconeTema.textContent = '☀️';
-      rotuloTema.textContent = 'Claro';
-    } else {
-      iconeTema.textContent = '🌙';
-      rotuloTema.textContent = 'Escuro';
-    }
-    localStorage.setItem('tema_preferido', tema);
-  }
+        <footer class="creditos-rodape">
+          <span>© 2026 Yara Nascimento da Silva. Todos os direitos reservados.</span>
+        </footer>
+      </div>
+    </section>
 
-  alternarTemaBtn.addEventListener('click', () => {
-    const temaAtual = document.documentElement.getAttribute('data-theme');
-    const novoTema = temaAtual === 'escuro' ? 'claro' : 'escuro';
-    definirTema(novoTema);
-  });
+  </main>
 
-  const temaSalvo = localStorage.getItem('tema_preferido') || 'claro';
-  definirTema(temaSalvo);
+  <div id="notificacao" class="notificacao">Texto copiado para a área de transferência!</div>
 
-  const botoesNavegacao = document.querySelectorAll('[data-alvo]');
-  const secoes = document.querySelectorAll('.secao-pagina');
-  const botoesNavHeader = document.querySelectorAll('.botao-nav');
+  <script>
+    const alternarTemaBtn = document.getElementById('alternarTema');
+    const iconeTema = document.getElementById('iconeTema');
+    const rotuloTema = document.getElementById('rotuloTema');
 
-  function navegarPara(idAlvo) {
-    secoes.forEach(secao => {
-      if (secao.id === idAlvo) {
-        secao.classList.add('ativa');
+    function definirTema(tema) {
+      document.documentElement.setAttribute('data-theme', tema);
+      if (tema === 'escuro') {
+        iconeTema.textContent = '☀️';
+        rotuloTema.textContent = 'Claro';
       } else {
-        secao.classList.remove('ativa');
+        iconeTema.textContent = '🌙';
+        rotuloTema.textContent = 'Escuro';
       }
-    });
-
-    botoesNavHeader.forEach(btn => {
-      if (btn.getAttribute('data-alvo') === idAlvo) {
-        btn.classList.add('ativo');
-      } else {
-        btn.classList.remove('ativo');
-      }
-    });
-
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
-  botoesNavegacao.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const alvo = btn.getAttribute('data-alvo');
-      navegarPara(alvo);
-    });
-  });
-
-  function fallbackCopiar(texto) {
-    const areaTexto = document.createElement("textarea");
-    areaTexto.value = texto;
-    areaTexto.style.position = "fixed";
-    areaTexto.style.left = "-999999px";
-    document.body.appendChild(areaTexto);
-    areaTexto.focus();
-    areaTexto.select();
-    try {
-      document.execCommand('copy');
-      exibirToast();
-    } catch (err) {
-      console.error('Erro ao copiar texto: ', err);
+      localStorage.setItem('tema_preferido', tema);
     }
-    document.body.removeChild(areaTexto);
-  }
 
-  function exibirToast() {
-    const notificacao = document.getElementById('notificacao');
-    notificacao.classList.add('exibir');
-    setTimeout(() => {
-      notificacao.classList.remove('exibir');
-    }, 3000);
-  }
-</script>
+    alternarTemaBtn.addEventListener('click', () => {
+      const temaAtual = document.documentElement.getAttribute('data-theme');
+      const novoTema = temaAtual === 'escuro' ? 'claro' : 'escuro';
+      definirTema(novoTema);
+    });
+
+    const temaSalvo = localStorage.getItem('tema_preferido') || 'claro';
+    definirTema(temaSalvo);
+
+    const botoesNavegacao = document.querySelectorAll('[data-alvo]');
+    const secoes = document.querySelectorAll('.secao-pagina');
+    const botoesNavHeader = document.querySelectorAll('.botao-nav');
+
+    function navegarPara(idAlvo) {
+      secoes.forEach(secao => {
+        if (secao.id === idAlvo) {
+          secao.classList.add('ativa');
+        } else {
+          secao.classList.remove('ativa');
+        }
+      });
+
+      botoesNavHeader.forEach(btn => {
+        if (btn.getAttribute('data-alvo') === idAlvo) {
+          btn.classList.add('ativo');
+        } else {
+          btn.classList.remove('ativo');
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    botoesNavegacao.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const alvo = btn.getAttribute('data-alvo');
+        navegarPara(alvo);
+      });
+    });
+
+    function copiarTexto(texto) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(texto)
+          .then(() => exibirToast())
+          .catch(() => fallbackCopiar(texto));
+      } else {
+        fallbackCopiar(texto);
+      }
+    }
+
+    function fallbackCopiar(texto) {
+      const areaTexto = document.createElement("textarea");
+      areaTexto.value = texto;
+      areaTexto.style.position = "fixed";
+      areaTexto.style.left = "-999999px";
+      document.body.appendChild(areaTexto);
+      areaTexto.focus();
+      areaTexto.select();
+      try {
+        document.execCommand('copy');
+        exibirToast();
+      } catch (err) {
+        console.error('Erro ao copiar texto: ', err);
+      }
+      document.body.removeChild(areaTexto);
+    }
+
+    function exibirToast(mensagem) {
+      const notificacao = document.getElementById('notificacao');
+      if (mensagem) notificacao.textContent = mensagem;
+      else notificacao.textContent = "Texto copiado para a área de transferência!";
+
+      notificacao.classList.add('exibir');
+      setTimeout(() => {
+        notificacao.classList.remove('exibir');
+      }, 3200);
+    }
+
+    (function inicializarGridInterativo() {
+      const canvas = document.getElementById('canvasGrid');
+      if (!canvas) return;
+
+      const ctx = canvas.getContext('2d');
+      const prefereReducaoMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const ehDispositivoTouch = window.matchMedia('(pointer: coarse)').matches;
+
+      if (prefereReducaoMovimento || ehDispositivoTouch) {
+        canvas.style.display = 'none';
+        return;
+      }
+
+      document.body.style.backgroundImage = 'none';
+
+      const ESPACAMENTO = 32;
+      const RAIO_INFLUENCIA = 140;
+      const RIGIDEZ_MOLA = 0.04;
+      const AMORTECIMENTO = 0.88;
+      const IMPULSO_CURSOR = 0.28;
+
+      let largura = 0;
+      let altura = 0;
+      let cols = 0;
+      let rows = 0;
+      let nos = [];
+
+      let mouseX = -9999;
+      let mouseY = -9999;
+      let prevMouseX = -9999;
+      let prevMouseY = -9999;
+      let corLinhaGrade = 'rgba(146, 26, 61, 0.12)';
+
+      function atualizarCorGrade() {
+        const estiloComputado = getComputedStyle(document.body);
+        corLinhaGrade = estiloComputado.getPropertyValue('--linha-grade').trim() || 'rgba(146, 26, 61, 0.12)';
+      }
+
+      function redimensionarGrid() {
+        largura = window.innerWidth;
+        altura = window.innerHeight;
+
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width = largura * dpr;
+        canvas.height = altura * dpr;
+        ctx.scale(dpr, dpr);
+
+        cols = Math.ceil(largura / ESPACAMENTO) + 3;
+        rows = Math.ceil(altura / ESPACAMENTO) + 3;
+
+        nos = [];
+        const offsetX = -ESPACAMENTO;
+        const offsetY = -ESPACAMENTO;
+
+        for (let r = 0; r < rows; r++) {
+          nos[r] = [];
+          for (let c = 0; c < cols; c++) {
+            const baseX = offsetX + c * ESPACAMENTO;
+            const baseY = offsetY + r * ESPACAMENTO;
+            nos[r][c] = {
+              baseX: baseX,
+              baseY: baseY,
+              x: baseX,
+              y: baseY,
+              vx: 0,
+              vy: 0
+            };
+          }
+        }
+        atualizarCorGrade();
+      }
+
+      window.addEventListener('resize', redimensionarGrid);
+      redimensionarGrid();
+
+      const alternarTemaBtn = document.getElementById('alternarTema');
+      if (alternarTemaBtn) {
+        alternarTemaBtn.addEventListener('click', () => {
+          setTimeout(atualizarCorGrade, 50);
+        });
+      }
+
+      window.addEventListener('pointermove', (e) => {
+        if (prevMouseX === -9999) {
+          prevMouseX = e.clientX;
+          prevMouseY = e.clientY;
+        }
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      }, { passive: true });
+
+      document.addEventListener('mouseleave', () => {
+        mouseX = -9999;
+        mouseY = -9999;
+        prevMouseX = -9999;
+        prevMouseY = -9999;
+      });
+
+      function simularERenderizar() {
+        ctx.clearRect(0, 0, largura, altura);
+
+        let deltaX = 0;
+        let deltaY = 0;
+
+        if (mouseX !== -9999 && prevMouseX !== -9999) {
+          deltaX = mouseX - prevMouseX;
+          deltaY = mouseY - prevMouseY;
+        }
+        prevMouseX = mouseX;
+        prevMouseY = mouseY;
+
+        for (let r = 0; r < rows; r++) {
+          for (let c = 0; c < cols; c++) {
+            const no = nos[r][c];
+
+            if (mouseX !== -9999) {
+              const dx = no.x - mouseX;
+              const dy = no.y - mouseY;
+              const dist = Math.hypot(dx, dy);
+
+              if (dist < RAIO_INFLUENCIA) {
+                const fator = Math.pow(1 - dist / RAIO_INFLUENCIA, 2);
+                no.vx += deltaX * fator * IMPULSO_CURSOR;
+                no.vy += deltaY * fator * IMPULSO_CURSOR;
+              }
+            }
+
+            const fx = (no.baseX - no.x) * RIGIDEZ_MOLA;
+            const fy = (no.baseY - no.y) * RIGIDEZ_MOLA;
+
+            no.vx = (no.vx + fx) * AMORTECIMENTO;
+            no.vy = (no.vy + fy) * AMORTECIMENTO;
+
+            no.x += no.vx;
+            no.y += no.vy;
+          }
+        }
+
+        ctx.beginPath();
+        ctx.strokeStyle = corLinhaGrade;
+        ctx.lineWidth = 1;
+
+        for (let r = 0; r < rows; r++) {
+          ctx.moveTo(nos[r][0].x, nos[r][0].y);
+          for (let c = 1; c < cols; c++) {
+            ctx.lineTo(nos[r][c].x, nos[r][c].y);
+          }
+        }
+
+        for (let c = 0; c < cols; c++) {
+          ctx.moveTo(nos[0][c].x, nos[0][c].y);
+          for (let r = 1; r < rows; r++) {
+            ctx.lineTo(nos[r][c].x, nos[r][c].y);
+          }
+        }
+
+        ctx.stroke();
+
+        requestAnimationFrame(simularERenderizar);
+      }
+
+      requestAnimationFrame(simularERenderizar);
+    })();
+
+  </script>
 </body>
+
 </html>
